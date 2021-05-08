@@ -164,6 +164,7 @@ footer h4 {
   .toggle {
     position: absolute;
     top: 34px;
+    height: 95vh;
   }
   .container {
     width: 140px;
