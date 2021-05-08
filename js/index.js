@@ -1,19 +1,34 @@
 let navItem = document.querySelector(".nav-item");
+const main = document.querySelector("#main_container");
 function navDisplay(event) {
   navItem.classList.toggle("toggle");
+  main.classList.toggle("main_none");
 }
 
-const main = document.querySelector("#main_container");
 //const main = document.querySelector(".box");
+const loading = document.getElementById("loader");
+//it display loading
+function displayLaoding() {
+  loading.classList.add("display");
+
+  setTimeout(() => {
+    loading.classList.remove("display");
+  }, 5000);
+}
+function hideLoading() {
+  loading.classList.add("display_none");
+}
 
 //fetch data
 let container = "";
 const fetchData = async () => {
+  displayLaoding();
   const data = await fetch(
     "https://forbes400.herokuapp.com/api/forbes400?limit=100"
   );
   try {
     const response = await data.json();
+    hideLoading();
     response.forEach((item) => {
       console.log(item);
       const {
@@ -23,6 +38,7 @@ const fetchData = async () => {
         countryOfCitizenship,
         source,
       } = item;
+
       container += `<div class="container">
         <img src="${squareImage}" alt="">
         <div class="personal_name">${personName}</div>
