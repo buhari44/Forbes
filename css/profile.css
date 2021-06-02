@@ -1,0 +1,157 @@
+.profile-box {
+  width: 100%;
+  padding: 70px 250px;
+  color: #000;
+  height: 100%;
+}
+.ind,
+.gender,
+.bios,
+.about,
+.myrank,
+.worth,
+.names {
+  color: #000;
+  font-size: 15px;
+}
+.img-text {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  height: 40%;
+  /* padding-bottom: 20px; */
+}
+.image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0px;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+}
+
+.profile-box span {
+  font-size: 17px;
+  color: #000;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-right: 5px;
+}
+.long-text,
+.about {
+  margin-top: 7%;
+}
+.long-text .bios,
+.about {
+  line-height: 25px;
+  word-spacing: 7px;
+}
+
+.long-text span {
+  display: block;
+}
+.long-text > p {
+  margin-top: 10px;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+footer h3 {
+  color: blue;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media (max-width: 1000px) {
+  .texts {
+    padding-right: -40%;
+  }
+  .profile-box {
+    padding: 50px 150px;
+  }
+}
+@media (max-width: 800px) {
+  .profile-box {
+    padding: 50px 70px;
+  }
+}
+@media (max-width: 600px) {
+  .profile-box {
+    padding: 50px 40px;
+  }
+  .ind,
+  .gender,
+  .bios,
+  .about,
+  .myrank,
+  .worth,
+  .names {
+    color: #000;
+    font-size: 10px;
+  }
+  .profile-box span {
+    font-size: 12px;
+    color: #000;
+    font-weight: 700;
+    opacity: 0.6;
+    margin-right: 3px;
+  }
+  .image img {
+    width: 8rem;
+    height: 10rem;
+    border-radius: 0px;
+  }
+}
+@media (max-width: 421px) {
+  .profile-box {
+    padding: 50px 25px;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7em;
+  }
+  .img-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 40%;
+    /* padding-bottom: 20px; */
+  }
+  .long-text,
+  .about,
+  footer {
+    margin-top: 40px;
+  }
+  .profile-box span {
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+    opacity: 0.6;
+    margin-right: 7px;
+  }
+  .ind,
+  .gender,
+  .bios,
+  .about,
+  .myrank,
+  .worth,
+  .names {
+    color: #000;
+    font-size: 17px;
+  }
+  .long-text .bios,
+.about {
+  line-height: 27px;
+  word-spacing: 9px;
+}
+}
+@media (max-width: 330px) {
+  .profile-box {
+    padding: 50px 25px;
+  }
+}
